@@ -22,9 +22,18 @@ class ProfilePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Profil Pengguna'),
-        centerTitle: true,
+        centerTitle: false,
         backgroundColor: Colors.blueAccent,
         foregroundColor: Colors.white,
+
+        actions: const[
+          Icon(Icons.search),
+          SizedBox(width: 16,),
+          Icon(Icons.notifications),
+          SizedBox(width: 16,),
+          Icon(Icons.more_vert),
+          SizedBox(width: 16,),
+        ],
       ),
       body: SafeArea(
         child: Padding(
